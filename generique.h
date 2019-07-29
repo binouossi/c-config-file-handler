@@ -28,7 +28,9 @@ struct con{
 
 // this function return the readed data struct
 // It take the config file absolut path as parameter
-con nt_config(std::string path);
+con config_reader(std::string path);
+
+void config_reader(std::string conf, auto &config);
 
 auto get_value(con&,bool&,std::istringstream&);
 
